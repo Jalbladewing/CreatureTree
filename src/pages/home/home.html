@@ -1,16 +1,22 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      UAL News
+      Familias de criaturas
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-list>
-    <ion-item *ngFor="let noticia of noticias" (click)="getNoticia(noticia.id)">
-      <h2>{{ noticia.title.rendered }}</h2>
-      <p>{{ noticia.date }}</p>
-    </ion-item>
-  </ion-list>
+<ion-content class="backgroundImage" padding>
+    <ion-grid>
+      <ion-row>
+      <ion-col col-1 *ngFor="let family of families" (click)="getCreaturesFamily(family.id, family.name)">
+        <div class="container">
+            <img class="image" src="{{ family.key.href }}" alt="{{ family.name }}">
+            <div class="centered">
+              <p class="nameFont">{{ family.name }}</p>
+            </div>
+          </div>
+      </ion-col>
+    </ion-row>
+    </ion-grid>
 </ion-content>

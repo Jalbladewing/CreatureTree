@@ -6,15 +6,15 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { NoticiasProvider } from '../providers/noticias/noticias';
+import { NoticiasProvider } from '../providers/creaturesFamily/creaturesFamily';
 import { HttpClientModule } from '@angular/common/http';
-import { NoticiaPage } from '../pages/noticia/noticia';
+import { CriaturasPage } from '../pages/criaturas/criaturas';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    NoticiaPage
+    CriaturasPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +25,7 @@ import { NoticiaPage } from '../pages/noticia/noticia';
   entryComponents: [
     MyApp,
     HomePage,
-    NoticiaPage
+    CriaturasPage
   ],
   providers: [
     StatusBar,
