@@ -11,6 +11,7 @@
 </ion-header>
 
 <ion-content class="backgroundImage" padding>
+    <img style="margin-left:25%;" src="https://vignette.wikia.nocookie.net/wow/images/7/7d/WoWlogo.png/revision/latest?cb=20090510204154&path-prefix=es" alt="Logo World of Warcraft">
     <ion-grid>
       <ion-row>
       <ion-col col-4 *ngFor="let creature of creatures">
@@ -19,6 +20,10 @@
             <div class="centered">
               <p class="nameFont">{{ creature.name }}</p>
             </div>
+            <div class="top-right">
+                <p *ngIf=" creature.is_tameable == true" class="nameFont, tameable">Domesticable</p>
+                <p *ngIf=" creature.is_tameable == false" class="nameFont, nonTameable">No Domesticable</p>
+              </div>
           </div>
       </ion-col>
     </ion-row>

@@ -31,6 +31,7 @@ page-criaturas
         position: absolute;
         top: 8px;
         right: 16px;
+        font-size: 2em;
       }
       
       .bottom-right {
@@ -60,6 +61,16 @@ page-criaturas
       .nameFont
       {
         font-family: "Semplicita Pro","Open Sans",Arial,Helvetica,sans-serif;
+      }
+
+      .tameable
+      {
+        color: green;
+      }
+
+      .nonTameable
+      {
+        color: red;
       }
 
 
