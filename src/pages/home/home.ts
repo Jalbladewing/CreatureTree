@@ -17,7 +17,6 @@ export class HomePage {
     noticiasProvider.getCreaturesFamilies().subscribe((result: any) => 
     {
       this.families = result.creature_families;
-      console.log(result.creature_families);
 
       for(let i = 0; i < this.families.length; i++)
       {

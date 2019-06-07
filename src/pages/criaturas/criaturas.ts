@@ -31,17 +31,9 @@ export class CriaturasPage {
       {
         if(result.family.id == this.familyId) 
         {
+          result.creature_displays[0].key.href = this.noticiasProvider.getCreatureZoom(result.creature_displays[0].key.href);
           this.creatures.push(result);
-
-          this.noticiasProvider.getCreatureMedia(result.creature_displays[0].key.href).subscribe((result: any) => 
-          {
-            this.creatures[contador].creature_displays[0].key.href = result.assets[2].value;
-            contador++;
-          })
-        }
-
-        
-          
+        }   
       })
     }
   }

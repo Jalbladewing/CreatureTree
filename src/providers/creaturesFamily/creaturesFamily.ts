@@ -3,12 +3,11 @@ import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
 
 const authURL = "https://us.battle.net/oauth/token?client_id=96a48afa0dae47edbc0abd75a4225c92&client_secret=Jylncfcsyh5DCBi279ok9Wxll7ABMhXi&grant_type=client_credentials";
-//const criaturesURL = "USwzD5luj539mxcDUBPP1fIaPhltHM2sAK";
 const baseURL = "https://eu.api.blizzard.com/data/wow/creature-family/";
 const creatureBaseURL = "https://eu.api.blizzard.com/data/wow/creature/";
 const baseMediaURL = "https://eu.api.blizzard.com/data/wow/media/creature-family/"; 
-const tokenURL = "?namespace=static-eu&locale=es_ES&access_token=USwzD5luj539mxcDUBPP1fIaPhltHM2sAK";
-const creatureTokenURL = "&locale=es_ES&access_token=USwzD5luj539mxcDUBPP1fIaPhltHM2sAK";
+const tokenURL = "?namespace=static-eu&locale=es_ES&access_token=USI12oclev2oAFkA16Sx7aMDeXwPow9GuW";
+const creatureTokenURL = "&locale=es_ES&access_token=USI12oclev2oAFkA16Sx7aMDeXwPow9GuW";
 
 /*
   Generated class for the NoticiasProvider provider.
@@ -51,6 +50,14 @@ export class NoticiasProvider {
   {
     let url = displayURL + creatureTokenURL;
     return this.http.get(url);
+  }
+
+  getCreatureZoom(refURL:string)
+  {
+    console.log(refURL);
+    let id = refURL.substring(refURL.indexOf('display/')+8,refURL.indexOf('?'));
+    console.log(id);
+    return "https://render-eu.worldofwarcraft.com/npcs/zoom/creature-display-" +id +".jpg";
   }
 
 
