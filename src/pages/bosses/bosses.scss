@@ -1,4 +1,5 @@
-page-home {
+page-bosses 
+{
     .backgroundImage
     {
         background-image: url("http://bnetcmsus-a.akamaihd.net/cms/template_resource/JPKVVF0I2ZBB1461617074269.jpg");
@@ -12,7 +13,6 @@ page-home {
     .container:hover 
     {
         border: 1px solid #f8b706;
-        cursor: pointer;
     }
       
       .bottom-left {
@@ -25,12 +25,14 @@ page-home {
         position: absolute;
         top: 8px;
         left: 16px;
+        font-size: 2em;
       }
       
       .top-right {
         position: absolute;
         top: 8px;
         right: 16px;
+        font-size: 2em;
       }
       
       .bottom-right {
@@ -41,13 +43,32 @@ page-home {
       
       .centered {
         position: absolute;
-        bottom: -37px;
+        bottom: -73px;
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 3em;
         background: #211510;
         border-top: 1px solid #504137;
-        width: 100.1%;
+        width: 99.7%;
+        height: 24%;
+      }
+
+      .textCentered {
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3em;
+        width: 100%;
+      }
+
+      .descriptionCentered {
+        position: absolute;
+        bottom: -39px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 0.9em;
+        width: 100%;
         height: 15%;
       }
 
@@ -55,18 +76,28 @@ page-home {
       {
         width: 100%;
         height: 100%;
+        content: url("https://wow.zamimg.com/images/wow/icons/large/inv_misc_questionmark.jpg");
       }
 
       .nameFont
       {
         font-family: "Semplicita Pro","Open Sans",Arial,Helvetica,sans-serif;
-        margin-top: 2px;
       }
 
-      .gridCenter
+      .tameable
       {
-        margin-left: 15%;
+        color: green;
       }
-      
+
+      .level
+      {
+        color: #cdc911;
+      }
+
+      .nonTameable
+      {
+        color: red;
+      }
+
 
 }

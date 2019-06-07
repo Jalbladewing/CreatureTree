@@ -9,12 +9,16 @@ import { HomePage } from '../pages/home/home';
 import { NoticiasProvider } from '../providers/creaturesFamily/creaturesFamily';
 import { HttpClientModule } from '@angular/common/http';
 import { CriaturasPage } from '../pages/criaturas/criaturas';
+import { FamiliaCriaturasPage } from '../pages/familia-criaturas/familia-criaturas';
+import { BossesPage } from '../pages/bosses/bosses';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    CriaturasPage
+    FamiliaCriaturasPage,
+    CriaturasPage,
+    BossesPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,9 @@ import { CriaturasPage } from '../pages/criaturas/criaturas';
   entryComponents: [
     MyApp,
     HomePage,
-    CriaturasPage
+    FamiliaCriaturasPage,
+    CriaturasPage,
+    BossesPage
   ],
   providers: [
     StatusBar,

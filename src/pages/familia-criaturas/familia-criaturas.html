@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Familias de criaturas
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="backgroundImage" padding>
+    <img style="margin-left:25%;" src="https://vignette.wikia.nocookie.net/wow/images/7/7d/WoWlogo.png/revision/latest?cb=20090510204154&path-prefix=es" alt="Logo World of Warcraft">
+    <ion-grid>
+      <ion-row>
+      <ion-col col-1 *ngFor="let family of families" (click)="getCreaturesFamily(family.id, family.name)">
+        <div class="container">
+            <img class="image" src="{{ family.key.href }}" alt="{{ family.name }}" data-toggle="tooltip" title="{{ family.name }}">
+            <div class="centered">
+              <p class="nameFont">{{ family.name }}</p>
+            </div>
+          </div>
+      </ion-col>
+    </ion-row>
+    </ion-grid>
+</ion-content>

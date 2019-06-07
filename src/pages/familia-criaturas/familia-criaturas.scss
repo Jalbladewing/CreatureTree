@@ -1,0 +1,68 @@
+page-familia-criaturas {
+        .backgroundImage
+        {
+            background-image: url("http://bnetcmsus-a.akamaihd.net/cms/template_resource/JPKVVF0I2ZBB1461617074269.jpg");
+        }
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+            border: 1px solid #504137;
+          }
+        .container:hover 
+        {
+            border: 1px solid #f8b706;
+            cursor: pointer;
+        }
+          
+          .bottom-left {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+          }
+          
+          .top-left {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+          }
+          
+          .top-right {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+          }
+          
+          .bottom-right {
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+          }
+          
+          .centered {
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1em;
+            background: #211510;
+            border-top: 1px solid #504137;
+            width: 99.95%;
+            height: 15%;
+          }
+    
+          .image
+          {
+            width: 100%;
+            height: 100%;
+          }
+    
+          .nameFont
+          {
+            font-family: "Semplicita Pro","Open Sans",Arial,Helvetica,sans-serif;
+            margin-top: 2px;
+          }
+          
+    
+    }
+    

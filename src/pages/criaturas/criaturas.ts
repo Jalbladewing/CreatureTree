@@ -40,7 +40,7 @@ export class CriaturasPage {
 
   ionViewDidLoad() 
   {
-    console.log('ionViewDidLoad NoticiaPage');
+    console.log('ionViewDidLoad CriaturasPage');
   }
 
 }
